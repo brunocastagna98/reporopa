@@ -1,6 +1,8 @@
 spring:
   application:
     name: producto-service
+  config:
+    import: optional:configserver:http://config-server:8888
 
   datasource:
     url: jdbc:mysql://mysql-db:3306/local_producto_service?useSSL=false&serverTimezone=America/Argentina/Buenos_Aires
