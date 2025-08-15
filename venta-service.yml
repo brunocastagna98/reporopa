@@ -3,7 +3,7 @@ spring:
     name: venta-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/local_venta_service?useSSL=false&serverTimezone=America/Argentina/Buenos_Aires
+    url: jdbc:mysql://mysql-db:3306/local_venta_service?useSSL=false&serverTimezone=America/Argentina/Buenos_Aires
     username: root
     password: ""
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -22,7 +22,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
     register-with-eureka: true
     fetch-registry: true
     healthcheck:
