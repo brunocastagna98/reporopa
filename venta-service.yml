@@ -5,7 +5,7 @@ spring:
     import: optional:configserver:http://config-server:8888
 
   datasource:
-    url: jdbc:mysql://mysql-db:3306/local_venta_service?useSSL=false&serverTimezone=America/Argentina/Buenos_Aires
+    url: jdbc:mysql://mysql-db:3306/local_venta_service?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
